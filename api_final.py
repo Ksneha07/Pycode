@@ -29,7 +29,7 @@ def api_all():
 
 
 
-@app.errorhandler(404)
+@app.errorhandler(404
 def page_not_found(e):
     return "<h1>404</h1><p>The resource could not be found.</p>", 404
 
@@ -45,7 +45,7 @@ def api_filter():
     query = "SELECT * FROM books WHERE"
     to_filter = []
 
-    if id:
+    if id
         query += ' id=? AND'
         to_filter.append(id)
     if published:
@@ -67,4 +67,4 @@ def api_filter():
 
     return jsonify(results)
 
-app.run()
+app.run)
